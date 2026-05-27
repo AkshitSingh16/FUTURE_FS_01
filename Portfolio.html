@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="Portfolio.css">
+    <script src="https://kit.fontawesome.com/c0ec150c39.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+ 
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Akshit_Logo.png" class="logo">
+
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="header-text">
+               <p>Web Developer</p>
+               <h2>Hi, I am <span>Akshit</span><br> Singh From New Delhi</h2>
+            </div>
+        </div>
+    </div>
+<!-------------------about------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Akshit_Casual.jpeg"> 
+                </div>
+                <div class="about-col-2">
+                <h2 class="sub-title">About Me</h2> 
+                <p>I am a B.Tech student passionate about technology and innovation,
+                with skills in web development, Python, Java, and DevOps. 
+                I have experience working with HTML, CSS, JavaScript, React, Node.js, C/C++, and 
+                DSA to build responsive and user-friendly applications while also exploring 
+                DevOps practices like version control, automation, and CI/CD. 
+                Through personal projects and certifications, 
+                I continuously enhance my technical knowledge and problem-solving abilities, 
+                and I am currently seeking internship or entry-level opportunities in 
+                Full Stack Development, Python Development, Java, and DevOps to apply my skills, 
+                contribute to impactful projects, and grow professionally.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('Certification')">Certification</p>
+                    <p class="tab-links" onclick="opentab('Education')">Education</p> 
+                </div> 
+                <div class="tab-contents active-tab" id="Skills">
+                    <ul>
+                        <li><span>Frontend Development</span><br>Designing Web/App Interfaces</li>
+                        <li><span>Python Language</span><br>Python Programming Language</li>
+                        <li><span>Machine Learning</span><br>ML Concepts</li> 
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Certification">
+                    <ul>
+                        <li><span>Google Analytics</span><br>Google</li>
+                        <li><span>Smart India Hackathon</span><br>KIIT, Bhubaneswar</li>
+                        <li><span>Introduction to AI</span><br>Microsoft</li> 
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Education"> 
+                    <ul>
+                        <li><span>BTech</span><br>Kalinga Institute of Industrial Technology, Bhubaneswar</li>
+                        <li><span>Higher Secondary School</span><br>Aadharshila Vidyapeeth, Delhi</li>
+                        <li><span>Matriculation</span><br>Aadharshila Vidyapeeth, Delhi</li>
+                    </ul>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-----------------Services---------------->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>I build responsive and fast websites using modern technologies like HTML, CSS, 
+                    JavaScript and React. From simple landing pages to full-featured web applications, 
+                    I ensure clean code and smooth user experience. My websites are optimized for all 
+                    screen sizes and browsers.</p>
+                    <a href="#">Learn More</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>I design clean, intuitive, and visually appealing interfaces that users 
+                    love to interact with. My focus is on creating designs that are both beautiful 
+                    and functional, keeping the user's needs at the center. I turn ideas into 
+                    pixel-perfect designs with smooth user flows.</p>
+                    <a href="#">Learn More</a>
+                </div>
+
+                <div>
+                    <i class="fa-brands fa-python"></i>
+                    <h2>Python Development</h2>
+                    <p>I develop powerful Python-based solutions including automation scripts, 
+                    data analysis tools, and backend systems. Whether it's web scraping, 
+                    API integration, or data visualization, I write efficient and readable 
+                    Python code. I also have experience with popular libraries like NumPy, 
+                        Pandas, and Flask.</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!------------------------Portfolio----------------------->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+
+            <div class="work-list">
+                <div class="work">
+                    <img src="Gemini_img.jpeg">
+                    <div class="layer">
+                        <h3>Gemini Clone</h3>
+                        <p>Built a Gemini Clone Chatbot using HTML, CSS, JavaScript, and React 
+                        to create an interactive and responsive user interface. 
+                        The project simulates AI-based conversational functionality with a 
+                        clean design and smooth user experience. I also integrated basic API 
+                        functionality and focused on improving frontend performance, component 
+                        structure, and real-time chat interaction.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="Work5.png">
+                    <div class="layer">
+                        <h3>QR Code Scanner</h3>
+                        <p>Developed a QR Code Scanner using Python with basic image-processing 
+                        and decoding functionality. The project can detect and scan QR codes 
+                        efficiently to extract encoded information in real time. Through this 
+                        project, I gained practical experience in Python programming, working with 
+                        libraries, and implementing simple automation and scanning features.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="Work6.jpeg">
+                    <div class="layer">
+                        <h3>E-Commerce Webpage</h3>
+                        <p>Developed an E-Commerce Webpage using HTML, CSS, and JavaScript with a responsive 
+                        and user-friendly interface. The project includes product display sections, 
+                        navigation features, and interactive UI components to enhance user experience. 
+                        Through this project, I improved my frontend development skills, styling techniques, 
+                        and understanding of dynamic web functionality.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+
+    <!-------------------Contact-------------------------->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Conatct Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> singhakshit808@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 9354532356</p>
+                    <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/akshit-singh-a412542a8/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/AkshitSingh16"><i class="fa-brands fa-github"></i></a>
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                <a href="Akshit_Professional_Resume(1).pdf" download class="btn btn2">Download CV</a>
+                </div>
+
+                <div class="contact-right">
+                    <form name="YOUR_FORM_NAME">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>         
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright @ Akshit. Made With <i class="fa-solid fa-heart"></i> By Akshit Singh</p>
+        </div>
+    </div>
+    
+
+
+
+
+
+    <script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+
+
+    </script>
+
+
+
+
+
+
+    <script>
+
+
+        var sidemenu = document.getElementById("sidemenu")
+
+        function openmenu(){
+            sidemenu.style.right = "0"
+        }
+
+        function closemenu(){
+            sidemenu.style.right = "-65%"    
+        }
+
+
+    </script>
+
+
+    <script>
+	const scriptURL = 'https://script.google.com/macros/s/AKfycbwBfSdutmFR09JaHpcGZRaEucYlDWOcXZxr_gT6YkF4jRYXUmt4K5RkPBkQJ6KKzNFx/exec'
+	const form = document.forms['YOUR_FORM_NAME']
+    const msg = document.getElementById("msg")
+
+	form.addEventListener('submit', e => {
+		e.preventDefault()
+		fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+			.then(response => response.json())
+			.then(response => {
+                msg.innerHTML = "Message Sent Successfully!" 
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                }, 5000)
+                form.reset()
+            })
+			.catch(error => console.error('Error!', error.message))
+	})
+</script>
+
+
+</body>
+</html>
